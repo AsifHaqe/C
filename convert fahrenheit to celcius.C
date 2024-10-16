@@ -1,17 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    int overalldays = 0, years = 0, month = 0, days = 0;
+    float farenheit , celsius;
 
-    printf("Enter the total number of days:");
-    scanf("%d", &overalldays);
-    years = overalldays / 365;
-    overalldays =% 365;
-    month = overalldays / 30;
-    overalldays =% 30;
-    days = overalldays;
-    printf("%d %d %d", years, month, days);
+    printf("enter temparature into farenheit:");
+    scanf("%f", &farenheit);
 
+    celsius = (farenheit - 32) * 5 / 9;
+    printf("temparature in celsius: %.2f\n", celsius);
     return 0;
-
 }
